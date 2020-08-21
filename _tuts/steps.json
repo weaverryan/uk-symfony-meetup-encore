@@ -1,0 +1,225 @@
+{
+    "steps": [
+        {
+            "id": "start",
+            "name": "start",
+            "description": null
+        },
+        {
+            "id": "setup-install-annotations",
+            "name": "Setup: install annotations",
+            "description": null
+        },
+        {
+            "id": "setup-install-twig",
+            "name": "Setup: install Twig",
+            "description": null
+        },
+        {
+            "id": "setup-add-a-homepage",
+            "name": "Setup: Add a homepage",
+            "description": null
+        },
+        {
+            "id": "setup-add-bootstrap",
+            "name": "Setup: add bootstrap",
+            "description": null
+        },
+        {
+            "id": "setup-add-fontawesome",
+            "name": "Setup: add FontAwesome",
+            "description": null
+        },
+        {
+            "id": "setup-add-empty-app-js",
+            "name": "Setup: add empty app.js",
+            "description": null
+        },
+        {
+            "id": "es2015-let-const",
+            "name": "ES2015: let\/const",
+            "description": null
+        },
+        {
+            "id": "es2015-class",
+            "name": "ES2015: class",
+            "description": null
+        },
+        {
+            "id": "es2015-class-with-method",
+            "name": "ES2015: class with method",
+            "description": null
+        },
+        {
+            "id": "es2015-arrow-function",
+            "name": "ES2015: arrow function",
+            "description": null
+        },
+        {
+            "id": "babel-install-it",
+            "name": "Babel: install it",
+            "description": null
+        },
+        {
+            "id": "babel-change-script-tag",
+            "name": "Babel: change script tag",
+            "description": null
+        },
+        {
+            "id": "babel-ignore-public-build",
+            "name": "Babel: ignore public\/build",
+            "description": null
+        },
+        {
+            "id": "babel-install-preset-env",
+            "name": "Babel: install preset-env",
+            "description": null
+        },
+        {
+            "id": "babel-add-babelrc",
+            "name": "Babel: add .babelrc",
+            "description": null
+        },
+        {
+            "id": "babel-package-json-browserslist",
+            "name": "Babel: package.json browserslist",
+            "description": null
+        },
+        {
+            "id": "babel-more-restrict-list",
+            "name": "Babel: more restrict list",
+            "description": null
+        },
+        {
+            "id": "modules-isolate-store-js",
+            "name": "Modules: isolate store.js",
+            "description": null
+        },
+        {
+            "id": "webpack-install-it",
+            "name": "Webpack: install it",
+            "description": null
+        },
+        {
+            "id": "webpack-config-js",
+            "name": "webpack.config.js",
+            "description": null
+        },
+        {
+            "id": "webpack-install-babel-loader",
+            "name": "Webpack: install babel-loader",
+            "description": null
+        },
+        {
+            "id": "webpack-add-babel-loader",
+            "name": "Webpack: add babel-loader",
+            "description": null
+        },
+        {
+            "id": "webpack-remove-manual-babelrc",
+            "name": "Webpack: remove manual .babelrc",
+            "description": null
+        },
+        {
+            "id": "css-add-css",
+            "name": "CSS: add CSS",
+            "description": null
+        },
+        {
+            "id": "css-install-css-loader",
+            "name": "CSS: install css-loader",
+            "description": null
+        },
+        {
+            "id": "css-add-loader",
+            "name": "CSS: add loader",
+            "description": null
+        },
+        {
+            "id": "encore-install-it",
+            "name": "Encore: install it",
+            "description": null
+        },
+        {
+            "id": "encore-add-config",
+            "name": "Encore: add config",
+            "description": null
+        },
+        {
+            "id": "react-enable-it",
+            "name": "React: enable it",
+            "description": null
+        },
+        {
+            "id": "react-install-react-preset",
+            "name": "React: install react-preset",
+            "description": null
+        },
+        {
+            "id": "react-add-react-app",
+            "name": "React: add React app",
+            "description": null
+        },
+        {
+            "id": "promises-install-axios",
+            "name": "Promises: install axios",
+            "description": null
+        },
+        {
+            "id": "promises-make-ajax-call",
+            "name": "Promises: make ajax call",
+            "description": null
+        },
+        {
+            "id": "promises-install-core-js",
+            "name": "Promises: install core-js",
+            "description": null
+        },
+        {
+            "id": "promises-configure-core-js",
+            "name": "Promises: configure core-js",
+            "description": null
+        },
+        {
+            "id": "promises-use-await",
+            "name": "Promises: use await",
+            "description": null
+        },
+        {
+            "id": "promises-add-async-function",
+            "name": "Promises: add async function",
+            "description": null
+        },
+        {
+            "id": "stimulus-install-it",
+            "name": "Stimulus: install it",
+            "description": null
+        },
+        {
+            "id": "stimulus-bootstrap-code",
+            "name": "Stimulus: bootstrap code",
+            "description": null
+        },
+        {
+            "id": "stimulus-remove-old-code",
+            "name": "Stimulus: remove old code",
+            "description": null
+        },
+        {
+            "id": "stimulus-add-controller",
+            "name": "Stimulus: add controller",
+            "description": null
+        },
+        {
+            "id": "stimulus-hook-up-app",
+            "name": "Stimulus: hook up app",
+            "description": null
+        },
+        {
+            "id": "ajax-in-stimulus",
+            "name": "AJAX in Stimulus",
+            "description": null
+        }
+    ],
+    "sha": "c6ca3686855fb53ec35ffae029799f4dae1c16bd"
+}

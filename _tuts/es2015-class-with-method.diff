@@ -1,0 +1,41 @@
+diff --git a/public/app.js b/public/app.js
+index 1f0e7d6..942fa71 100644
+--- a/public/app.js
++++ b/public/app.js
+@@ -1,6 +1,14 @@
+ class Store {
+-    constructor(products) {
++    constructor(element, products) {
+         this.products = products;
++        this.element = element;
++    }
++
++    initialize() {
++        const button = document.querySelector('#button');
++        button.addEventListener('click', function() {
++            this.element.innerHTML = this.getProductsString();
++        });
+     }
+ 
+     getProductsString() {
+@@ -8,7 +16,8 @@ class Store {
+     }
+ }
+ 
+-const store = new Store([
++const app = document.querySelector('#app');
++const store = new Store(app, [
+     'Sheer Shears',
+     'Wool Hauling Basket',
+     'After-Shear (Fresh Cut Grass)',
+@@ -16,9 +25,4 @@ const store = new Store([
+     'Shear Comb',
+     'Shearly Conditioned'
+ ]);
+-
+-const button = document.querySelector('#button');
+-const app = document.querySelector('#app');
+-button.addEventListener('click', function() {
+-    app.innerHTML = store.getProductsString();
+-});
++store.initialize();

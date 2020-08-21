@@ -1,0 +1,13 @@
+diff --git a/public/app.js b/public/app.js
+index 942fa71..5362d6f 100644
+--- a/public/app.js
++++ b/public/app.js
+@@ -6,7 +6,7 @@ class Store {
+ 
+     initialize() {
+         const button = document.querySelector('#button');
+-        button.addEventListener('click', function() {
++        button.addEventListener('click', () => {
+             this.element.innerHTML = this.getProductsString();
+         });
+     }

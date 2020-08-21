@@ -1,0 +1,63 @@
+diff --git a/public/app.js b/public/app.js
+new file mode 100644
+index 0000000..8f79349
+--- /dev/null
++++ b/public/app.js
+@@ -0,0 +1,14 @@
++var products = [
++    'Sheer Shears',
++    'Wool Hauling Basket',
++    'After-Shear (Fresh Cut Grass)',
++    'After-Shear (Morning Dew)',
++    'Shear Comb',
++    'Shearly Conditioned'
++];
++
++var button = document.querySelector('#button');
++var app = document.querySelector('#app');
++button.addEventListener('click', function() {
++    app.innerHTML = products.join(', ');
++});
+diff --git a/templates/base.html.twig b/templates/base.html.twig
+index 32a019c..f21fe81 100644
+--- a/templates/base.html.twig
++++ b/templates/base.html.twig
+@@ -2,7 +2,7 @@
+ <html>
+     <head>
+         <meta charset="UTF-8">
+-        <title>{% block title %}Welcome!{% endblock %}</title>
++        <title>GRWebDev: Crash Course to Modern JS</title>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     </head>
+     <body>
+@@ -10,5 +10,6 @@
+             {% block body %}{% endblock %}
+         </div>
+         <script src="https://kit.fontawesome.com/a20a0555e5.js" crossorigin="anonymous"></script>
++        <script src="/app.js"></script>
+     </body>
+ </html>
+diff --git a/templates/main/homepage.html.twig b/templates/main/homepage.html.twig
+index 3ebf057..3f864f3 100644
+--- a/templates/main/homepage.html.twig
++++ b/templates/main/homepage.html.twig
+@@ -2,4 +2,18 @@
+ 
+ {% block body %}
+     <h1>Hello Modern JavaScript!</h1>
++
++    <div class="card">
++        <div class="card-header">
++            Products
++        </div>
++        <div class="card-body">
++            <div class="card-list" id="app"></div>
++
++            <hr>
++            <button id="button" class="btn btn-lg btn-primary">
++                Baaa! <i class="fad fa-sheep"></i>
++            </button>
++        </div>
++    </div>
+ {% endblock %}
