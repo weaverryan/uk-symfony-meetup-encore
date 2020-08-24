@@ -9,7 +9,7 @@ if (storeEl) {
             const response = await axios.get('/api/products');
             const products = response.data.products;
 
-            const store = new Store(storeEl, products);
+            const store = new Store.default(storeEl, products);
             store.initialize();
         }
 
