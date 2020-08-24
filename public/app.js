@@ -1,5 +1,5 @@
 import Store from './store';
-import './styles.css';
+import './styles.scss';
 import sheep from './sheep.png';
 
 const storeEl = document.querySelector('#store');
