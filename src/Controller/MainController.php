@@ -20,7 +20,9 @@ class MainController extends AbstractController
      */
     public function store()
     {
-        return $this->render('main/store.html.twig');
+        return $this->render('main/store.html.twig', [
+            'comments' => ['Great!', 'Super!', 'I love sheep!'],
+        ]);
     }
 
     /**

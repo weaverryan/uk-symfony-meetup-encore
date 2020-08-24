@@ -16,6 +16,16 @@
             </button>
         </div>
     </div>
+
+    <ul>
+        {% for comment in comments %}
+            <li data-controller="comment">
+                <span class="js-comment-text">{{ comment }}</span>
+
+                <button class="js-btn-make-louder btn btn-sm btn-secondary">Louder</button>
+            </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
 
 {% block javascripts %}
