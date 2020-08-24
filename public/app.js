@@ -1,4 +1,4 @@
-var products = [
+const products = [
     'Sheer Shears',
     'Wool Hauling Basket',
     'After-Shear (Fresh Cut Grass)',
@@ -7,8 +7,8 @@ var products = [
     'Shearly Conditioned'
 ];
 
-var button = document.querySelector('#button');
-var storeEl = document.querySelector('#store');
+const button = document.querySelector('#button');
+const storeEl = document.querySelector('#store');
 button.addEventListener('click', function() {
     storeEl.innerHTML = products.join(', ');
 });
