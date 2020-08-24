@@ -1,3 +1,4 @@
+/*
 import Store from './components/store';
 import axios from 'axios';
 
@@ -12,3 +13,4 @@ async function startStoreApp() {
 }
 
 startStoreApp();
+ */
