@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const storeEl = document.querySelector('#store');
 
-function startStoreApp() {
+async function startStoreApp() {
     const response = await axios.get('/api/products');
     const products = response.data.products;
 
