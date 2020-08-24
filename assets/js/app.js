@@ -1,6 +1,14 @@
 import '../styles/styles.scss';
 import sheep from '../images/sheep.png';
 import axios from 'axios';
+import { Application } from 'stimulus'
+import { definitionsFromContext } from 'stimulus/webpack-helpers'
+
+/* STIMULUS SETUP */
+const application = Application.start()
+const context = require.context('./controllers', true, /\.js$/)
+application.load(definitionsFromContext(context))
+/* END STIMULUS SETUP */
 
 const storeEl = document.querySelector('#store');
 if (storeEl) {
