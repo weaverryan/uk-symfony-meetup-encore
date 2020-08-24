@@ -6,7 +6,7 @@ class Store {
 
     initialize() {
         const button = document.querySelector('#button');
-        button.addEventListener('click', function() {
+        button.addEventListener('click', () => {
             this.element.innerHTML = this.getProductsString();
         });
     }
