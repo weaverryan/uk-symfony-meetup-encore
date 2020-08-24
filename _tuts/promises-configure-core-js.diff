@@ -1,16 +1,0 @@
-diff --git a/webpack.config.js b/webpack.config.js
-index e576d8c..9116abf 100644
---- a/webpack.config.js
-+++ b/webpack.config.js
-@@ -8,6 +8,10 @@ Encore
-     .addEntry('app', './public/app.js')
-     .enableSourceMaps(!Encore.isProduction())
-     .enableReactPreset()
--; 
-+    .configureBabelPresetEnv((options) => {
-+        options.corejs = 3;
-+        options.useBuiltIns = 'usage';
-+    })
-+;
- 
- module.exports = Encore.getWebpackConfig(); 

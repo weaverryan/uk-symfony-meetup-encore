@@ -1,12 +1,0 @@
-diff --git a/webpack.config.js b/webpack.config.js
-index 44e781b..e576d8c 100644
---- a/webpack.config.js
-+++ b/webpack.config.js
-@@ -7,6 +7,7 @@ Encore
-     // will output as public/build/app.js
-     .addEntry('app', './public/app.js')
-     .enableSourceMaps(!Encore.isProduction())
-+    .enableReactPreset()
- ; 
- 
- module.exports = Encore.getWebpackConfig(); 
