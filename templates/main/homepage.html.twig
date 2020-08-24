@@ -3,17 +3,5 @@
 {% block body %}
     <h1>Hello Modern JavaScript!</h1>
 
-    <div class="card">
-        <div class="card-header">
-            Products
-        </div>
-        <div class="card-body">
-            <div class="card-list" id="store"></div>
-
-            <hr>
-            <button id="button" class="btn btn-lg btn-primary">
-                Baaa! <i class="fad fa-sheep"></i>
-            </button>
-        </div>
-    </div>
+    <a href="{{ path('app_store') }}">Go to the store!</a>
 {% endblock %}

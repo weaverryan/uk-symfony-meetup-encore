@@ -16,6 +16,14 @@ class MainController extends AbstractController
     }
 
     /**
+     * @Route("/store", name="app_store")
+     */
+    public function store()
+    {
+        return $this->render('main/store.html.twig');
+    }
+
+    /**
      * @Route("/api/products")
      */
     public function productsApi()
