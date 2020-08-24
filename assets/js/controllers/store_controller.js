@@ -1,13 +1,18 @@
 import { Controller } from 'stimulus';
 import axios from 'axios';
-import Store from '../components/store';
 
 export default class extends Controller {
     async initialize() {
         const response = await axios.get('/api/products');
-        const products = response.data.products;
+        this.products = response.data.products;
+    }
 
-        const store = new Store(this.element, products);
-        store.initialize();
+    showProducts() {
+        this.element.querySelector('#store')
+            .innerHTML = this.getProductsString();
+    }
+
+    getProductsString() {
+        return this.products.join(', ');
     }
 }
