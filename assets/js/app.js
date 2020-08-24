@@ -1,6 +1,6 @@
-import Store from './store';
-import './styles.scss';
-import sheep from './sheep.png';
+import Store from './components/store';
+import '../styles/styles.scss';
+import sheep from '../images/sheep.png';
 
 const storeEl = document.querySelector('#store');
 const store = new Store(storeEl, [
