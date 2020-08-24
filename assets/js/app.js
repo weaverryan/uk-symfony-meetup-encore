@@ -1,10 +1,11 @@
 import '../styles/styles.scss';
 import sheep from '../images/sheep.png';
-import Store from './components/store';
 import axios from 'axios';
 
 const storeEl = document.querySelector('#store');
 if (storeEl) {
+    import Store from './components/store';
+
     async function startStoreApp() {
         const response = await axios.get('/api/products');
         const products = response.data.products;
