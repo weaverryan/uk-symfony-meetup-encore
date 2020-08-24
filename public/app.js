@@ -1,6 +1,14 @@
 class Store {
-    constructor(products) {
+    constructor(element, products) {
         this.products = products;
+        this.element = element;
+    }
+
+    initialize() {
+        const button = document.querySelector('#button');
+        button.addEventListener('click', function() {
+            this.element.innerHTML = this.getProductsString();
+        });
     }
 
     getProductsString() {
@@ -8,7 +16,8 @@ class Store {
     }
 }
 
-const store = new Store([
+const storeEl = document.querySelector('#store');
+const store = new Store(storeEl, [
     'Sheer Shears',
     'Wool Hauling Basket',
     'After-Shear (Fresh Cut Grass)',
@@ -16,9 +25,4 @@ const store = new Store([
     'Shear Comb',
     'Shearly Conditioned'
 ]);
-
-const button = document.querySelector('#button');
-const storeEl = document.querySelector('#store');
-button.addEventListener('click', function() {
-    storeEl.innerHTML = store.getProductsString();
-});
+store.initialize();
