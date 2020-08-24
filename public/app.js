@@ -1,20 +1,4 @@
-class Store {
-    constructor(element, products) {
-        this.products = products;
-        this.element = element;
-    }
-
-    initialize() {
-        const button = document.querySelector('#button');
-        button.addEventListener('click', () => {
-            this.element.innerHTML = this.getProductsString();
-        });
-    }
-
-    getProductsString() {
-        return this.products.join(', ');
-    }
-}
+import Store from './store';
 
 const storeEl = document.querySelector('#store');
 const store = new Store(storeEl, [
