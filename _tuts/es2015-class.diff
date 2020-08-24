@@ -1,5 +1,5 @@
 diff --git a/public/app.js b/public/app.js
-index e07fc89..1f0e7d6 100644
+index 80dabbb..586d38a 100644
 --- a/public/app.js
 +++ b/public/app.js
 @@ -1,14 +1,24 @@
@@ -25,8 +25,8 @@ index e07fc89..1f0e7d6 100644
 +]);
  
  const button = document.querySelector('#button');
- const app = document.querySelector('#app');
+ const storeEl = document.querySelector('#store');
  button.addEventListener('click', function() {
--    app.innerHTML = products.join(', ');
-+    app.innerHTML = store.getProductsString();
+-    storeEl.innerHTML = products.join(', ');
++    storeEl.innerHTML = store.getProductsString();
  });

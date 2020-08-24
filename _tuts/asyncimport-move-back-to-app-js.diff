@@ -1,0 +1,38 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index e281686..e8e3e00 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -1,5 +1,19 @@
+ import '../styles/styles.scss';
+ import sheep from '../images/sheep.png';
++import Store from './components/store';
++import axios from 'axios';
++
++const storeEl = document.querySelector('#store');
++
++async function startStoreApp() {
++    const response = await axios.get('/api/products');
++    const products = response.data.products;
++
++    const store = new Store(storeEl, products);
++    store.initialize();
++}
++
++startStoreApp();
+ 
+ const h1 = document.querySelector('h1');
+ h1.innerHTML = `<img src="${sheep}" alt="baa" height="30">` + h1.innerHTML;
+diff --git a/assets/js/store.js b/assets/js/store.js
+index 1165c08..632bbd2 100644
+--- a/assets/js/store.js
++++ b/assets/js/store.js
+@@ -1,3 +1,4 @@
++/*
+ import Store from './components/store';
+ import axios from 'axios';
+ 
+@@ -12,3 +13,4 @@ async function startStoreApp() {
+ }
+ 
+ startStoreApp();
++ */

@@ -1,0 +1,13 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 2f818b4..ba33a4a 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -9,7 +9,7 @@ if (storeEl) {
+             const response = await axios.get('/api/products');
+             const products = response.data.products;
+ 
+-            const store = new Store(storeEl, products);
++            const store = new Store.default(storeEl, products);
+             store.initialize();
+         }
+ 

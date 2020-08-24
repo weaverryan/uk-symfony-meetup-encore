@@ -1,5 +1,5 @@
 diff --git a/public/app.js b/public/app.js
-index 942fa71..5362d6f 100644
+index 5bde2ba..9b83924 100644
 --- a/public/app.js
 +++ b/public/app.js
 @@ -6,7 +6,7 @@ class Store {

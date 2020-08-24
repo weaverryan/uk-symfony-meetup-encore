@@ -1,0 +1,56 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 30a4af7..e281686 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -1,19 +1,5 @@
+-import Store from './components/store';
+ import '../styles/styles.scss';
+ import sheep from '../images/sheep.png';
+-import axios from 'axios';
+-
+-const storeEl = document.querySelector('#store');
+-
+-async function startStoreApp() {
+-    const response = await axios.get('/api/products');
+-    const products = response.data.products;
+-
+-    const store = new Store(storeEl, products);
+-    store.initialize();
+-}
+-
+-startStoreApp();
+ 
+ const h1 = document.querySelector('h1');
+ h1.innerHTML = `<img src="${sheep}" alt="baa" height="30">` + h1.innerHTML;
+diff --git a/assets/js/store.js b/assets/js/store.js
+new file mode 100644
+index 0000000..1165c08
+--- /dev/null
++++ b/assets/js/store.js
+@@ -0,0 +1,14 @@
++import Store from './components/store';
++import axios from 'axios';
++
++const storeEl = document.querySelector('#store');
++
++async function startStoreApp() {
++    const response = await axios.get('/api/products');
++    const products = response.data.products;
++
++    const store = new Store(storeEl, products);
++    store.initialize();
++}
++
++startStoreApp();
+diff --git a/webpack.config.js b/webpack.config.js
+index 4e53956..be696df 100644
+--- a/webpack.config.js
++++ b/webpack.config.js
+@@ -24,6 +24,7 @@ Encore
+      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
+      */
+     .addEntry('app', './assets/js/app.js')
++    .addEntry('store', './assets/js/store.js')
+     //.addEntry('page1', './assets/js/page1.js')
+     //.addEntry('page2', './assets/js/page2.js')
+ 

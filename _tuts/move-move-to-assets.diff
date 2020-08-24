@@ -1,0 +1,29 @@
+diff --git a/public/app.js b/assets/app.js
+similarity index 100%
+rename from public/app.js
+rename to assets/app.js
+diff --git a/public/sheep.png b/assets/sheep.png
+similarity index 100%
+rename from public/sheep.png
+rename to assets/sheep.png
+diff --git a/public/store.js b/assets/store.js
+similarity index 100%
+rename from public/store.js
+rename to assets/store.js
+diff --git a/public/styles.scss b/assets/styles.scss
+similarity index 100%
+rename from public/styles.scss
+rename to assets/styles.scss
+diff --git a/webpack.config.js b/webpack.config.js
+index b357192..0ca4556 100644
+--- a/webpack.config.js
++++ b/webpack.config.js
+@@ -23,7 +23,7 @@ Encore
+      * Each entry will result in one JavaScript file (e.g. app.js)
+      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
+      */
+-    .addEntry('app', './public/app.js')
++    .addEntry('app', './assets/app.js')
+     //.addEntry('page1', './assets/js/page1.js')
+     //.addEntry('page2', './assets/js/page2.js')
+ 

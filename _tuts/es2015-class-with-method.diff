@@ -1,5 +1,5 @@
 diff --git a/public/app.js b/public/app.js
-index 1f0e7d6..942fa71 100644
+index 586d38a..5bde2ba 100644
 --- a/public/app.js
 +++ b/public/app.js
 @@ -1,6 +1,14 @@
@@ -23,8 +23,8 @@ index 1f0e7d6..942fa71 100644
  }
  
 -const store = new Store([
-+const app = document.querySelector('#app');
-+const store = new Store(app, [
++const storeEl = document.querySelector('#store');
++const store = new Store(storeEl, [
      'Sheer Shears',
      'Wool Hauling Basket',
      'After-Shear (Fresh Cut Grass)',
@@ -34,8 +34,8 @@ index 1f0e7d6..942fa71 100644
  ]);
 -
 -const button = document.querySelector('#button');
--const app = document.querySelector('#app');
+-const storeEl = document.querySelector('#store');
 -button.addEventListener('click', function() {
--    app.innerHTML = store.getProductsString();
+-    storeEl.innerHTML = store.getProductsString();
 -});
 +store.initialize();

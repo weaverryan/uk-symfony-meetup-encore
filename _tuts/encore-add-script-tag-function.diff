@@ -1,0 +1,13 @@
+diff --git a/templates/base.html.twig b/templates/base.html.twig
+index 9fa9009..fe78e19 100644
+--- a/templates/base.html.twig
++++ b/templates/base.html.twig
+@@ -13,7 +13,7 @@
+         </div>
+         {% block javascripts %}
+             <script src="https://kit.fontawesome.com/a20a0555e5.js" crossorigin="anonymous"></script>
+-            <script src="{{ asset('app.js') }}"></script>
++            {{ encore_entry_script_tags('app') }}
+         {% endblock %}
+     </body>
+ </html>

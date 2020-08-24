@@ -1,0 +1,29 @@
+diff --git a/assets/css/app.css b/assets/css/app.css
+deleted file mode 100644
+index cb33b13..0000000
+--- a/assets/css/app.css
++++ /dev/null
+@@ -1,3 +0,0 @@
+-body {
+-    background-color: lightgray;
+-}
+diff --git a/assets/js/app.js b/assets/js/app.js
+deleted file mode 100644
+index 1748c14..0000000
+--- a/assets/js/app.js
++++ /dev/null
+@@ -1,14 +0,0 @@
+-/*
+- * Welcome to your app's main JavaScript file!
+- *
+- * We recommend including the built version of this JavaScript file
+- * (and its CSS file) in your base layout (base.html.twig).
+- */
+-
+-// any CSS you import will output into a single css file (app.css in this case)
+-import '../css/app.css';
+-
+-// Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
+-// import $ from 'jquery';
+-
+-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');

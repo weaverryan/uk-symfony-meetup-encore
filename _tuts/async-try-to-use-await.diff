@@ -1,0 +1,22 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 2683bb7..21d66c1 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -4,12 +4,12 @@ import sheep from '../images/sheep.png';
+ import axios from 'axios';
+ 
+ const storeEl = document.querySelector('#store');
+-axios.get('/api/products').then(response => {
+-    const products = response.data.products;
+ 
+-    const store = new Store(storeEl, products);
+-    store.initialize();
+-});
++const response = await axios.get('/api/products');
++const products = response.data.products;
++
++const store = new Store(storeEl, products);
++store.initialize();
+ 
+ const h1 = document.querySelector('h1');
+ h1.innerHTML = `<img src="${sheep}" alt="baa" height="30">` + h1.innerHTML;

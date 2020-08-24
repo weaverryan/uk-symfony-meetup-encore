@@ -21,6 +21,11 @@
             "description": null
         },
         {
+            "id": "setup-add-simple-api-endpoint",
+            "name": "Setup: add simple API endpoint",
+            "description": null
+        },
+        {
             "id": "setup-add-bootstrap",
             "name": "Setup: add bootstrap",
             "description": null
@@ -31,8 +36,8 @@
             "description": null
         },
         {
-            "id": "setup-add-empty-app-js",
-            "name": "Setup: add empty app.js",
+            "id": "setup-add-basic-app-js",
+            "name": "Setup: add basic app.js",
             "description": null
         },
         {
@@ -54,7 +59,222 @@
             "id": "es2015-arrow-function",
             "name": "ES2015: arrow function",
             "description": null
+        },
+        {
+            "id": "import-isolate-store-js",
+            "name": "Import: isolate store.js",
+            "description": null
+        },
+        {
+            "id": "webpack-install-it",
+            "name": "Webpack: install it",
+            "description": null
+        },
+        {
+            "id": "webpack-webpack-config-js",
+            "name": "Webpack: webpack.config.js",
+            "description": null
+        },
+        {
+            "id": "webpack-undo-all-of-that",
+            "name": "Webpack: undo all of that",
+            "description": null
+        },
+        {
+            "id": "encore-install-it",
+            "name": "Encore: install it",
+            "description": null
+        },
+        {
+            "id": "encore-install-yarn",
+            "name": "Encore: install yarn",
+            "description": null
+        },
+        {
+            "id": "encore-remove-assets-dir",
+            "name": "Encore: remove assets\/ dir",
+            "description": null
+        },
+        {
+            "id": "encore-configure-entry",
+            "name": "Encore: configure entry",
+            "description": null
+        },
+        {
+            "id": "encore-add-script-tag-function",
+            "name": "Encore: add script tag function",
+            "description": null
+        },
+        {
+            "id": "browserslist-add-config",
+            "name": "browserslist: add config",
+            "description": null
+        },
+        {
+            "id": "browserslist-more-restrictive-list",
+            "name": "browserslist: more restrictive list",
+            "description": null
+        },
+        {
+            "id": "css-add-css-import",
+            "name": "CSS: add css & import",
+            "description": null
+        },
+        {
+            "id": "css-add-link-tag-function",
+            "name": "CSS: add link tag function",
+            "description": null
+        },
+        {
+            "id": "image-add-background-image",
+            "name": "Image: add background-image",
+            "description": null
+        },
+        {
+            "id": "image-import-it",
+            "name": "Image: import it",
+            "description": null
+        },
+        {
+            "id": "sass-rename-file",
+            "name": "Sass: rename file",
+            "description": null
+        },
+        {
+            "id": "sass-install-sass",
+            "name": "Sass: install sass",
+            "description": null
+        },
+        {
+            "id": "sass-enable-feature",
+            "name": "Sass: enable feature",
+            "description": null
+        },
+        {
+            "id": "move-move-to-assets",
+            "name": "Move: move to assets\/",
+            "description": null
+        },
+        {
+            "id": "move-reorganize",
+            "name": "Move: reorganize",
+            "description": null
+        },
+        {
+            "id": "async-install-axios",
+            "name": "Async: install axios",
+            "description": null
+        },
+        {
+            "id": "async-make-ajax-call",
+            "name": "Async: make AJAX call",
+            "description": null
+        },
+        {
+            "id": "async-try-to-use-await",
+            "name": "Async: try to use await",
+            "description": null
+        },
+        {
+            "id": "async-wrap-in-function",
+            "name": "Async: Wrap in function",
+            "description": null
+        },
+        {
+            "id": "async-make-function-async",
+            "name": "Async: make function async",
+            "description": null
+        },
+        {
+            "id": "multientry-add-store-page",
+            "name": "MultiEntry: add store page",
+            "description": null
+        },
+        {
+            "id": "multientry-add-store-entry",
+            "name": "MultiEntry: add store entry",
+            "description": null
+        },
+        {
+            "id": "multientry-add-script-link",
+            "name": "MultiEntry: add script\/link",
+            "description": null
+        },
+        {
+            "id": "asyncimport-move-back-to-app-js",
+            "name": "AsyncImport: move back to app.js",
+            "description": null
+        },
+        {
+            "id": "asyncimport-wrap-logic-in-if",
+            "name": "AsyncImport: Wrap logic in if",
+            "description": null
+        },
+        {
+            "id": "asyncimport-move-down-import",
+            "name": "AsyncImport: move down import",
+            "description": null
+        },
+        {
+            "id": "asyncimport-use-async-import",
+            "name": "AsyncImport: use async import",
+            "description": null
+        },
+        {
+            "id": "asyncimport-add-default",
+            "name": "AsyncImport: add .default",
+            "description": null
+        },
+        {
+            "id": "stimulus-install-it",
+            "name": "Stimulus: install it",
+            "description": null
+        },
+        {
+            "id": "stimulus-basic-setup-code",
+            "name": "Stimulus: basic setup code",
+            "description": null
+        },
+        {
+            "id": "stimulus-add-data-controller",
+            "name": "Stimulus: Add data-controller",
+            "description": null
+        },
+        {
+            "id": "stimulus-add-basic-controller",
+            "name": "Stimulus: add basic controller",
+            "description": null
+        },
+        {
+            "id": "stimulus-move-code-into-initialize",
+            "name": "Stimulus: move code into initialize()",
+            "description": null
+        },
+        {
+            "id": "stimulus-add-data-action",
+            "name": "Stimulus: add data-action",
+            "description": null
+        },
+        {
+            "id": "stimulus-show-data-target",
+            "name": "Stimulus: show data-target",
+            "description": null
+        },
+        {
+            "id": "legacyexample-install-jquery",
+            "name": "LegacyExample: install jquery",
+            "description": null
+        },
+        {
+            "id": "legacyexample-add-comments-section",
+            "name": "LegacyExample: add comments section",
+            "description": null
+        },
+        {
+            "id": "legacyexample-add-comment-controller",
+            "name": "LegacyExample: add comment_controller",
+            "description": null
         }
     ],
-    "sha": "8b6fb5537b4d1390daff7d53aabfda960c1a5751"
+    "sha": "92a6d058c2647fcc0b0524518823226a9ad65dde"
 }

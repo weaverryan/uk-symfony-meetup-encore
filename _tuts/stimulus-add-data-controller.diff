@@ -1,0 +1,13 @@
+diff --git a/templates/main/store.html.twig b/templates/main/store.html.twig
+index 08310d6..1c67925 100644
+--- a/templates/main/store.html.twig
++++ b/templates/main/store.html.twig
+@@ -3,7 +3,7 @@
+ {% block body %}
+     <h1>The Store</h1>
+ 
+-    <div class="card">
++    <div class="card" data-controller="store">
+         <div class="card-header">
+             Products
+         </div>

@@ -1,0 +1,13 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 553f05b..30a4af7 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -5,7 +5,7 @@ import axios from 'axios';
+ 
+ const storeEl = document.querySelector('#store');
+ 
+-function startStoreApp() {
++async function startStoreApp() {
+     const response = await axios.get('/api/products');
+     const products = response.data.products;
+ 

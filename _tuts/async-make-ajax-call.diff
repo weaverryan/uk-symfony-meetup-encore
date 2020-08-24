@@ -1,0 +1,29 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 5d46e54..2683bb7 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -1,17 +1,15 @@
+ import Store from './components/store';
+ import '../styles/styles.scss';
+ import sheep from '../images/sheep.png';
++import axios from 'axios';
+ 
+ const storeEl = document.querySelector('#store');
+-const store = new Store(storeEl, [
+-    'Sheer Shears',
+-    'Wool Hauling Basket',
+-    'After-Shear (Fresh Cut Grass)',
+-    'After-Shear (Morning Dew)',
+-    'Shear Comb',
+-    'Shearly Conditioned'
+-]);
+-store.initialize();
++axios.get('/api/products').then(response => {
++    const products = response.data.products;
++
++    const store = new Store(storeEl, products);
++    store.initialize();
++});
+ 
+ const h1 = document.querySelector('h1');
+ h1.innerHTML = `<img src="${sheep}" alt="baa" height="30">` + h1.innerHTML;

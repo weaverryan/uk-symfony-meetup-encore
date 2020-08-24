@@ -1,12 +1,14 @@
 diff --git a/templates/base.html.twig b/templates/base.html.twig
-index b94a89c..32a019c 100644
+index baef43c..0c2ff88 100644
 --- a/templates/base.html.twig
 +++ b/templates/base.html.twig
-@@ -9,6 +9,6 @@
+@@ -11,6 +11,8 @@
          <div class="container">
              {% block body %}{% endblock %}
          </div>
 -        {% block javascripts %}{% endblock %}
-+        <script src="https://kit.fontawesome.com/a20a0555e5.js" crossorigin="anonymous"></script>
++        {% block javascripts %}
++            <script src="https://kit.fontawesome.com/a20a0555e5.js" crossorigin="anonymous"></script>
++        {% endblock %}
      </body>
  </html>

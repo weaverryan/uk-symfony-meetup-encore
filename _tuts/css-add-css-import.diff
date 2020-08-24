@@ -1,0 +1,22 @@
+diff --git a/public/app.js b/public/app.js
+index c256932..a2b7e32 100644
+--- a/public/app.js
++++ b/public/app.js
+@@ -1,4 +1,5 @@
+ import Store from './store';
++import './styles.css';
+ 
+ const storeEl = document.querySelector('#store');
+ const store = new Store(storeEl, [
+diff --git a/public/styles.css b/public/styles.css
+new file mode 100644
+index 0000000..1c2cddb
+--- /dev/null
++++ b/public/styles.css
+@@ -0,0 +1,6 @@
++#store {
++    background: green;
++    border-radius: 5px;
++    padding: 5px;
++    color: white;
++}

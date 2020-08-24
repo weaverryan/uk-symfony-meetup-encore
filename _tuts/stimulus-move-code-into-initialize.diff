@@ -1,0 +1,52 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index d8866ef..4544b35 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -1,6 +1,5 @@
+ import '../styles/styles.scss';
+ import sheep from '../images/sheep.png';
+-import axios from 'axios';
+ import { Application } from 'stimulus'
+ import { definitionsFromContext } from 'stimulus/webpack-helpers'
+ 
+@@ -10,20 +9,5 @@ const context = require.context('./controllers', true, /\.js$/)
+ application.load(definitionsFromContext(context))
+ /* END STIMULUS SETUP */
+ 
+-const storeEl = document.querySelector('#store');
+-if (storeEl) {
+-    import('./components/store').then(Store => {
+-        async function startStoreApp() {
+-            const response = await axios.get('/api/products');
+-            const products = response.data.products;
+-
+-            const store = new Store.default(storeEl, products);
+-            store.initialize();
+-        }
+-
+-        startStoreApp();
+-    });
+-}
+-
+ const h1 = document.querySelector('h1');
+ h1.innerHTML = `<img src="${sheep}" alt="baa" height="30">` + h1.innerHTML;
+diff --git a/assets/js/controllers/store_controller.js b/assets/js/controllers/store_controller.js
+index 87be002..4bd416e 100644
+--- a/assets/js/controllers/store_controller.js
++++ b/assets/js/controllers/store_controller.js
+@@ -1,7 +1,13 @@
+ import { Controller } from 'stimulus';
++import axios from 'axios';
++import Store from '../components/store';
+ 
+ export default class extends Controller {
+-    initialize() {
+-        console.log(this.element);
++    async initialize() {
++        const response = await axios.get('/api/products');
++        const products = response.data.products;
++
++        const store = new Store(this.element, products);
++        store.initialize();
+     }
+ }
